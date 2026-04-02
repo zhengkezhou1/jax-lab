@@ -17,7 +17,9 @@ ignore = [
     "E501",   # line too long (handled by formatter)
     "B905",   # `zip()` without explicit `strict=`
     "SIM108", # ternary operator (can reduce readability)
-    "RUF003", # ambiguous unicode chars — project uses Chinese comments
+    "RUF001", # ambiguous unicode chars in strings — project uses Chinese
+    "RUF002", # ambiguous unicode chars in docstrings — project uses Chinese
+    "RUF003", # ambiguous unicode chars in comments — project uses Chinese
     "RUF005", # iterable unpacking — tuple concat is idiomatic for tensor shapes
 ]
 
